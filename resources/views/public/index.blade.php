@@ -3,26 +3,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>@yield('title')</title>
-    <link rel="stylesheet" href="{ assets('public/vendors/mdi/css/materialdesignicons.min.css') }">
-    <link rel="stylesheet" href="{ assets('public/vendors/owl.carousel/css/owl.carousel.css') }">
-    <link rel="stylesheet" href="{ assets('public/vendors/owl.carousel/css/owl.theme.default.min.css') }">
-    <link rel="stylesheet" href="{ assets('public/vendors/aos/css/aos.css') }">
-    <link rel="stylesheet" href="{ assets('public/vendors/jquery-flipster/css/jquery.flipster.css') }">
-    <link rel="stylesheet" type="text/css" href="{ assets('public/css/style.css') }">
-    <link rel="shortcut icon" href="{ ('public\images\favicon.png') }" />
+    <link rel="stylesheet" href="{{ asset('theme/vendors/mdi/css/materialdesignicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('theme/vendors/owl.carousel/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('theme/vendors/owl.carousel/css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('theme/vendors/aos/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ asset('theme/vendors/jquery-flipster/css/jquery.flipster.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('theme/css/style.css') }}">
+    <link rel="shortcut icon" href="{{ asset('theme/images/favicon.png') }}" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div id="mobile-menu-overlay"></div>
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Marshmallow"></a>
+            <a class="navbar-brand" href="#"><img src="{{asset('theme/images/logo.svg')}}" alt="Marshmallow"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
-                    <img src="{ assets('\public\images\logo-dark.svg)}" class="logo-mobile-menu" alt="logo">
+                    <img src="{{ asset('theme/images/logo-dark.svg') }}" class="logo-mobile-menu" alt="logo">
                     <a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
                 </div>
                 <ul class="navbar-nav ml-auto align-items-center">
@@ -73,7 +73,7 @@
                                     <a href="#" class="btn btn-secondary mt-3">Learn more</a>
                                 </div>
                                 <div class="mt-5 mt-lg-0">
-                                    <img src="images/group.png" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
+                                    <img src="{{ asset('theme/images/group.png') }}" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
                                 </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-sm-4 text-center text-lg-left">
                         <div class="services-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                            <img src="images/integrated-marketing.svg" alt="integrated-marketing" data-aos="zoom-in">
+                            <img src="{{ asset('theme/images/integrated-marketing.svg') }}" alt="integrated-marketing" data-aos="zoom-in">
                             <h6 class="text-dark mb-3 mt-4 font-weight-medium">Integrated
                                 Marketing
                             </h6>
@@ -103,7 +103,7 @@
                     </div>
                     <div class="col-sm-4 text-center text-lg-left">
                         <div class="services-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                            <img src="images/design-development.svg" alt="design-development" data-aos="zoom-in">
+                            <img src="{{asset('theme/images/design-development.svg')}}" alt="design-development" data-aos="zoom-in">
                             <h6 class="text-dark mb-3 mt-4 font-weight-medium">Design &
                                 Development
                             </h6>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="col-sm-4 text-center text-lg-left">
                         <div class="services-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                            <img src="images/digital-strategy.svg" alt="digital-strategy" data-aos="zoom-in">
+                            <img src="{{asset('theme/images/digital-strategy.svg')}}" alt="digital-strategy" data-aos="zoom-in">
                             <h6 class="text-dark mb-3 mt-4 font-weight-medium">Digital
                                 Strategy
                             </h6>
@@ -127,7 +127,7 @@
                 <div class="row" data-aos="fade-up">
                     <div class="col-sm-4 text-center text-lg-left">
                         <div class="services-box  pb-lg-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                            <img src="images/digital-marketing.svg" alt="digital-marketing" data-aos="zoom-in">
+                            <img src="{{asset('theme/images/digital-marketing.svg')}}" alt="digital-marketing" data-aos="zoom-in">
                             <h6 class="text-dark mb-3 mt-4 font-weight-medium">Digital
                                 Marketing
                             </h6>
@@ -138,7 +138,7 @@
                     </div>
                     <div class="col-sm-4 text-center text-lg-left">
                         <div class="services-box pb-lg-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                            <img src="images/growth-strategy.svg" alt="growth-strategy" data-aos="zoom-in">
+                            <img src="{{asset('theme/images/growth-strategy.svg')}}" alt="growth-strategy" data-aos="zoom-in">
                             <h6 class="text-dark mb-3 mt-4 font-weight-medium">Growth
                                 Strategy
                             </h6>
@@ -149,7 +149,7 @@
                     </div>
                     <div class="col-sm-4 text-center text-lg-left">
                         <div class="services-box pb-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                            <img src="images/saving-strategy.svg" alt="saving-strategy" data-aos="zoom-in">
+                            <img src="{{asset('theme/images/saving-strategy.svg')}}" alt="saving-strategy" data-aos="zoom-in">
                             <h6 class="text-dark mb-3 mt-4 font-weight-medium">Saving
                                 Strategy
                             </h6>
@@ -172,20 +172,20 @@
                             pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur
                         </p>
                         <div class="d-flex justify-content-start mb-3">
-                            <img src="images/tick.png" alt="tick" class="mr-3 tick-icon">
+                            <img src="{{asset('theme/images/tick.png')}}" alt="tick" class="mr-3 tick-icon">
                             <p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
                         </div>
                         <div class="d-flex justify-content-start mb-3">
-                            <img src="images/tick.png" alt="tick" class="mr-3 tick-icon">
+                            <img src="{{asset('theme/images/tick.png')}}" alt="tick" class="mr-3 tick-icon">
                             <p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
                         </div>
                         <div class="d-flex justify-content-start">
-                            <img src="images/tick.png" alt="tick" class="mr-3 tick-icon">
+                            <img src="{{asset('theme/images/tick.png')}}" alt="tick" class="mr-3 tick-icon">
                             <p class="mb-0">Lorem ipsum dolor sit amet, pretium pretium</p>
                         </div>
                     </div>
                     <div class="col-sm-6 text-right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                        <img src="images/idea.png" alt="idea" class="img-fluid">
+                        <img src="{{asset('theme/images/idea.png')}}" alt="idea" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -204,49 +204,49 @@
             <div class="mb-5" data-aos="fade-up">
                 <div class="owl-carousel-projects owl-carousel owl-theme">
                     <div class="item">
-                        <img src="images/carousel/slider1.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider1.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider2.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider2.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider3.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider3.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider4.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider4.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider5.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider5.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider1.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider1.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider2.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider2.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider3.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider3.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider4.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider4.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider5.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider5.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider1.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider1.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider2.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider2.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider3.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider3.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider4.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider4.jpg')}}" alt="slider">
                     </div>
                     <div class="item">
-                        <img src="images/carousel/slider5.jpg" alt="slider">
+                        <img src="{{asset('theme/images/carousel/slider5.jpg')}}" alt="slider">
                     </div>
                 </div>
             </div>
@@ -254,7 +254,7 @@
                 <div class="row pt-5 mt-5 pb-5 mb-5">
                     <div class="col-sm-3">
                         <div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-down">
-                            <img src="images/satisfied-client.svg" alt="satisfied-client" class="mr-3">
+                            <img src="{{asset('theme/images/satisfied-client.svg')}}" alt="satisfied-client" class="mr-3">
                             <div>
                                 <h4 class="font-weight-bold text-dark mb-0"><span class="scVal">0</span>%</h4>
                                 <h5 class="text-dark mb-0">Satisfied clients</h5>
@@ -263,7 +263,7 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-up">
-                            <img src="images/finished-project.svg" alt="satisfied-client" class="mr-3">
+                            <img src="{{asset('theme/images/finished-project.svg')}}" alt="satisfied-client" class="mr-3">
                             <div>
                                 <h4 class="font-weight-bold text-dark mb-0"><span class="fpVal">0</span></h4>
                                 <h5 class="text-dark mb-0">Finished Project</h5>
@@ -272,7 +272,7 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-down">
-                            <img src="images/team-members.svg" alt="Team Members" class="mr-3">
+                            <img src="{{asset('theme/images/team-members.svg')}}" alt="Team Members" class="mr-3">
                             <div>
                                 <h4 class="font-weight-bold text-dark mb-0"><span class="tMVal">0</span></h4>
                                 <h5 class="text-dark mb-0">Team Members</h5>
@@ -281,7 +281,7 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="d-flex py-3 my-3 my-lg-0 justify-content-center" data-aos="fade-up">
-                            <img src="images/our-blog-posts.svg" alt="Our Blog Posts" class="mr-3">
+                            <img src="{{asset('theme/images/our-blog-posts.svg')}}" alt="Our Blog Posts" class="mr-3">
                             <div>
                                 <h4 class="font-weight-bold text-dark mb-0"><span class="bPVal">0</span></h4>
                                 <h5 class="text-dark mb-0">Our Blog Posts</h5>
@@ -317,7 +317,7 @@
                             <ul>
                                 <li>
                                     <div class="testimonial-item">
-                                        <img src="images/testimonial/testimonial1.jpg" alt="icon" class="testimonial-icons">
+                                        <img src="{{asset('theme/images/testimonial/testimonial1.jpg')}}" alt="icon" class="testimonial-icons">
                                         <p>Lorem ipsum dolor sit amet, consectetur
                                             pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium
                                         </p>
@@ -327,7 +327,7 @@
                                 </li>
                                 <li>
                                     <div class="testimonial-item">
-                                        <img src="images/testimonial/testimonial2.jpg" alt="icon" class="testimonial-icons">
+                                        <img src="{{asset('theme/images/testimonial/testimonial2.jpg')}}" alt="icon" class="testimonial-icons">
                                         <p>Lorem ipsum dolor sit amet, consectetur
                                             pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium
                                         </p>
@@ -337,7 +337,7 @@
                                 </li>
                                 <li>
                                     <div class="testimonial-item">
-                                        <img src="images/testimonial/testimonial3.jpg" alt="icon" class="testimonial-icons">
+                                        <img src="{{asset('theme/images/testimonial/testimonial3.jpg')}}" alt="icon" class="testimonial-icons">
                                         <p>Lorem ipsum dolor sit amet, consectetur
                                             pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium
                                         </p>
@@ -347,7 +347,7 @@
                                 </li>
                                 <li>
                                     <div class="testimonial-item">
-                                        <img src="images/testimonial/testimonial4.jpg" alt="icon" class="testimonial-icons">
+                                        <img src="{{asset('theme/images/testimonial/testimonial4.jpg')}}" alt="icon" class="testimonial-icons">
                                         <p>Lorem ipsum dolor sit amet, consectetur
                                             pretium pretium tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium
                                         </p>
@@ -366,11 +366,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="d-sm-flex justify-content-between align-items-center">
-                            <img src="images/deloit.svg" alt="deloit" class="p-2 p-lg-0" data-aos="fade-down" data-aos-offset="-400">
-                            <img src="images/erricson.svg" alt="erricson" class="p-2 p-lg-0" data-aos="fade-up" data-aos-offset="-400">
-                            <img src="images/netflix.svg" alt="netflix" class="p-2 p-lg-0" data-aos="fade-down" data-aos-offset="-400">
-                            <img src="images/instagram.svg" alt="instagram" class="p-2 p-lg-0" data-aos="fade-up" data-aos-offset="-400">
-                            <img src="images/coinbase.svg" alt="coinbase" class="p-2 p-lg-0" data-aos="fade-down" data-aos-offset="-400">
+                            <img src="{{asset('theme/images/deloit.svg')}}" alt="deloit" class="p-2 p-lg-0" data-aos="fade-down" data-aos-offset="-400">
+                            <img src="{{asset('theme/images/erricson.svg')}}" alt="erricson" class="p-2 p-lg-0" data-aos="fade-up" data-aos-offset="-400">
+                            <img src="{{asset('theme/images/netflix.svg')}}" alt="netflix" class="p-2 p-lg-0" data-aos="fade-down" data-aos-offset="-400">
+                            <img src="{{asset('theme/images/instagram.svg')}}" alt="instagram" class="p-2 p-lg-0" data-aos="fade-up" data-aos-offset="-400">
+                            <img src="{{asset('theme/images/coinbase.svg')}}" alt="coinbase" class="p-2 p-lg-0" data-aos="fade-down" data-aos-offset="-400">
                         </div>
                     </div>
                 </div>
@@ -401,7 +401,7 @@
                 <div class="row" data-aos="fade-up" data-aos-offset="-300">
                     <div class="col-sm-4">
                         <div class="pricing-box">
-                            <img src="images/starter.svg" alt="starter">
+                            <img src="{{asset('theme/images/starter.svg')}}" alt="starter">
                             <h6 class="font-weight-medium title-text">Starter Business</h6>
                             <h1 class="text-amount mb-4 mt-2">$23</h1>
                             <ul class="pricing-list">
@@ -416,7 +416,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="pricing-box selected">
-                            <img src="images/proffessional.svg" alt="starter">
+                            <img src="{{asset('theme/images/proffessional.svg')}}" alt="starter">
                             <h6 class="font-weight-medium title-text">Professional</h6>
                             <h1 class="text-amount mb-4 mt-2">$45</h1>
                             <ul class="pricing-list">
@@ -431,7 +431,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="pricing-box">
-                            <img src="images/premium.svg" alt="starter">
+                            <img src="{{asset('theme/images/premium.svg')}}" alt="starter">
                             <h6 class="font-weight-medium title-text">Premium</h6>
                             <h1 class="text-amount mb-4 mt-2">$87</h1>
                             <ul class="pricing-list">
@@ -451,7 +451,7 @@
             <div class="container">
                 <div class="row mb-5 pb-5">
                     <div class="col-sm-5" data-aos="fade-up" data-aos-offset="-500">
-                        <img src="images/contact.jpg" alt="contact" class="img-fluid">
+                        <img src="{{asset('theme/images/contact.jpg')}}" alt="contact" class="img-fluid">
                     </div>
                     <div class="col-sm-7" data-aos="fade-up" data-aos-offset="-500">
                         <h3 class="font-weight-medium text-dark mt-5 mt-lg-0">Got A Problem</h3>
@@ -484,7 +484,7 @@
         </section>
     </div>
 
-    <script src="{ assets('public/vendors/base/vendor.bundle.base.js') }"></script>
-    <script src="{ assets('public/vendors/owl.carousel/js/owl.carousel.js') }"></script>
-    <script src="{ assets('public/vendors/aos/js/aos.js') }"></script>
-    <script src="{ assets('public/js/template.js') }"></script>
+    <script src="{{ asset('theme/vendors/base/vendor.bundle.base.js') }}"></script>
+    <script src="{{ asset('theme/vendors/owl.carousel/js/owl.carousel.js') }}"></script>
+    <script src="{{ asset('theme/vendors/aos/js/aos.js') }}"></script>
+    <script src="{{ asset('theme/js/template.js') }}"></script>
